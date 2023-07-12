@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200;1,600&display=swap"rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css"  type="text/css" /> 
+    <script src="https://kit.fontawesome.com/cd55c105af.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" alt="logo" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="close_menu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="open_menu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>hello, It's Me</p>
+            <h1>Rajeev prajapati</h1>
+            <h3>And I'm a <span class="text"> Web Developer</span></h3>
+        </div>
+      </div>
+    </div>
+    <!-- another page -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/IMG-20230523-WA0010__1_-removebg-preview_upscaled.png" alt="">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-tittle">About Me</h1>
+            <p class="paragraph">Hello! I'm Rajeev Prajapati, a passionate full-stack developer with a strong foundation in both front-end and back-end technologies. I specialize in creating robust and scalable web applications that deliver seamless user experiences.As a full-stack developer, I bring a comprehensive approach to development, enabling me to build end-to-end solutions and tackle complex technical challenges. I am excited to leverage my skills and contribute to innovative projects that make a positive impact.</p>
+              <br>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>front-end Developer</span><br>Design fron-ted of the websites</li>
+                  <li><span>back-end Developer</span><br>Design back-end of the websites</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Experience">
+                <p>While I may be a fresher in the industry, I have dedicated significant time and effort to building various projects to enhance my skills as a full-stack developer. Through these projects, I have gained hands-on experience and applied my knowledge in practical ways
+                  <br>These projects have provided me with a deeper understanding of various technologies, frameworks, and the development process as a whole. They have allowed me to apply my knowledge in practical scenarios and further hone my skills as a full-stack developer.
+
+                  I am continually seeking opportunities to expand my portfolio and take on new projects to grow both professionally and personally. I am confident in my ability to contribute effectively to your team and deliver high-quality results.
+                </p>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                  <li><span> 2020-2024</span><br>B tech from Feroze Gandhi institute of engineering and tecnology</li>
+                  <li><span>2019-2020</span><br> 12th passed from kanpur </li>
+                  <li><span>2017-2018</span><br> 10th passed from kanpur </li>
+                </ul>
+              </div>
+
+             
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-end Design </h2>
+            <p>I specialize in creating visually stunning and interactive user interfaces that captivate and engage users, bringing websites to life.
+
+              With a strong command of HTML, CSS, and JavaScript, I translate design concepts into pixel-perfect, responsive web pages that function seamlessly across devices.
+              
+              I have a keen eye for detail and an understanding of user experience principles, ensuring intuitive navigation and a smooth user journey throughout the website.</p>
+              <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Back-end Design </h2>
+            <p>I specialize in creating visually stunning and interactive user interfaces that captivate and engage users, bringing websites to life.</p>
+
+             <p>With a strong command of HTML, CSS, and JavaScript, I translate design concepts into pixel-perfect, responsive web pages that function seamlessly across devices.
+              
+              I have a keen eye for detail and an understanding of user experience principles, ensuring intuitive navigation and a smooth user journey throughout the website.</p> 
+              <a href="#" onclick="show_hide()">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design </h2>
+            <p>I specialize in creating visually stunning and interactive user interfaces that captivate and engage users, bringing websites to life.
+
+              With a strong command of HTML, CSS, and JavaScript, I translate design concepts into pixel-perfect, responsive web pages that function seamlessly across devices.
+              
+              I have a keen eye for detail and an understanding of user experience principles, ensuring intuitive navigation and a smooth user journey throughout the website.</p>
+              <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- portfolio -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-tittle">My Work</h1>
+    <div class="work_list">
+      <div class="work">
+        <img src="images/work-1.png" >
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png" >
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel earum vitae eius velit .</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png" >
+        <div class="layer">
+          <h3>Online Shopping App</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel earum vitae eius velit .</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+      </div>
+      </div>  
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!-- contact -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact_left">
+        <h1>contact me</h1>
+        <p><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"><i class="fa-sharp fa-solid fa-paper-plane"></i></a> rajeevknp7080@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 8081520473</p>
+        <div class="social_icons">
+          <a href="https://github.com/Rajeev8081"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/rajeev-prajapati-837827254/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/rajeevprajapati6850/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="images/rajeev web dev Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact_right">
+        <form action="https://formsubmit.co/ https://formsubmit.co/el/jixupo" method="POST">
+          <input type="text", name="Name " placeholder="your name" required>
+          <input type="email", name="email " placeholder="your email" required>
+          <textarea name="message"  rows="6" placeholder="your message"></textarea>
+          <button type="submit" class="btn2 btn3 ">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</div>
+    
+   <script src="script.js"></script> 
+  </body>
+</html>
